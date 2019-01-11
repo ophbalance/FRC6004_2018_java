@@ -34,7 +34,7 @@ public class RobotMap {
 	public static final int JOYSTICK_MOVE_RIGHT_AXIS = 5;
 
 	public static final int OP_JOYSTICK_LEFT_RIGHT_AXIS = 1;
-	public static final int OP_JOYSTICK_MOVE_RIGHT_AXIS = 5;
+	public static final int OP_JOYSTICK_MOVE_RIGHT_AXIS = 0;
   // For example to map the left and right motors, you could define the
   // following variables to use with your drivetrain subsystem.
   // public static int leftMotor = 1;
