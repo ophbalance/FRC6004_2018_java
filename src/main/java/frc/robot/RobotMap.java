@@ -30,8 +30,8 @@ public class RobotMap {
 	// Joysticks
 	public static final int OI_DRIVER_CONTROLLER = 0;
 	public static final int OI_OP_CONTROLLER = 1;
-	public static final int JOYSTICK_MOVE_LEFT_AXIS = 1;
-	public static final int JOYSTICK_MOVE_RIGHT_AXIS = 5;
+	public static final int JOYSTICK_MOVE_LEFT_AXIS = 0;
+	public static final int JOYSTICK_MOVE_RIGHT_AXIS = 3;
 
 	public static final int OP_JOYSTICK_LEFT_RIGHT_AXIS = 1;
 	public static final int OP_JOYSTICK_MOVE_RIGHT_AXIS = 0;

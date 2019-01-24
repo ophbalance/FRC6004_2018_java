@@ -40,8 +40,8 @@ public class Drivetrain extends Subsystem {
 	}
 	
 	public void tankDrive(double leftSpeed, double rightSpeed) {
-		//robotDrive.arcadeDrive(moveSpeed, rotateSpeed);
-		robotDrive.tankDrive(leftSpeed, -rightSpeed);
+		robotDrive.arcadeDrive(-rightSpeed, -leftSpeed);
+		//robotDrive.tankDrive(leftSpeed, -rightSpeed);
 	}
 
     // Put methods for controlling this subsystem
