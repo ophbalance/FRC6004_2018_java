@@ -3,6 +3,7 @@ package frc.robot.subsystems;
 import frc.robot.RobotMap;
 import edu.wpi.first.wpilibj.command.Subsystem;
 import edu.wpi.first.wpilibj.Victor;
+import frc.robot.commands.*;
 
 /**
  *
@@ -16,7 +17,7 @@ public class Lift extends Subsystem {
         // Set the default command for a subsystem here.
         // Define the motor and set it to zero
        liftDrive = new Victor(RobotMap.LIFT_VICTOR);
-       liftDrive.set(0);
+       setDefaultCommand(new LiftCommand());
     }
     
     public void update(double liftSpeed) {
