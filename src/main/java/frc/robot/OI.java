@@ -10,6 +10,9 @@ import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.buttons.Button;
 import edu.wpi.first.wpilibj.buttons.JoystickButton;
 
+//IMPORT ALL OUR COMMANDS FOR USE IN THIS FILE
+import frc.robot.commands.*;
+
 /**
  * This class is the glue that binds the controls on the physical operator
  * interface to the commands and command groups that allow control of the robot.
@@ -18,6 +21,14 @@ public class OI {
   public Joystick driverController = new Joystick(RobotMap.OI_DRIVER_CONTROLLER);
   public Joystick opController = new Joystick(RobotMap.OI_OP_CONTROLLER);
   
+  public Button upLift = new JoystickButton(opController, 0);
+
+  public OI () {
+
+    upLift.whileHeld(new LiftUp());
+
+  }
+
   //// CREATING BUTTONS
   // One type of button is a joystick button which is any button on a
   //// joystick.

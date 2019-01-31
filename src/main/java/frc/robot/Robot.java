@@ -12,6 +12,9 @@ import frc.robot.subsystems.Drivetrain;
 import frc.robot.subsystems.LiftDrive;
 import frc.robot.subsystems.Extract;
 
+//IMPORT SUBSYSTEM
+import frc.robot.subsystems.Lift;
+
 import edu.wpi.first.wpilibj.TimedRobot;
 import edu.wpi.first.wpilibj.command.Command;
 import edu.wpi.first.wpilibj.command.Scheduler;
@@ -37,6 +40,9 @@ public class Robot extends TimedRobot {
   public static LiftDrive liftdrive = null;
   public static Extract extract = null;
 
+  //DEFINE LIFT SUBSYSTEM
+  public static Lift r_lift = null;
+
   Command m_autonomousCommand;
   SendableChooser<Command> m_chooser = new SendableChooser<>();
 
@@ -49,6 +55,10 @@ public class Robot extends TimedRobot {
     drivetrain = new Drivetrain();
     liftdrive = new LiftDrive();
     extract = new Extract();
+
+    //CALL SUBSYSTEM INIT()
+    r_lift = new Lift();
+
     //CameraServer.getInstance().startAutomaticCapture();
     
     m_oi = new OI();

@@ -24,6 +24,9 @@ public class RobotMap {
 	public static final int LIFT_VICTOR_LEFT = 7;
 	public static final int LIFT_VICTOR_RIGHT = 4;
 
+	//NEW LIFT
+	public static final int LIFT_VICTOR = 9;
+
 	//intake
 	public static final int INTAKER = 5;
 	
@@ -35,6 +38,10 @@ public class RobotMap {
 
 	public static final int OP_JOYSTICK_LEFT_RIGHT_AXIS = 1;
 	public static final int OP_JOYSTICK_MOVE_RIGHT_AXIS = 0;
+
+	//LIFT AXIS CONTROL
+	public static final int OP_JOYSTICK_LIFT_AXIS = 7;
+
   // For example to map the left and right motors, you could define the
   // following variables to use with your drivetrain subsystem.
   // public static int leftMotor = 1;
